@@ -1,0 +1,111 @@
+/****************
+    МОДАЛЬНОЕ ОКНО
+****************/
+.modal {
+    /*display: none;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    
+    z-index: 1;
+    z-index: 1000;
+}
+.modal-content {
+    position: absolute;
+    bottom: 0;
+    background-color: #fef200;
+    
+    overflow:hidden;
+    width: 100%;
+    height: 65%;
+
+    /*z-index: 99999;*/
+}
+/*
+ПЕРВАЯ ЧАСТЬ
+*/
+.button-spin{
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    padding-top: 9px;
+    color: #a675b3;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    margin: 20px auto;
+    font: normal 17px arial;
+    border: 1px solid #CCCCCC;
+}
+
+/*
+ВТОРАЯ ЧАСТЬ
+*/
+.second-part{
+    flex-direction: column;
+    text-align: center;
+}
+.modal-window__heading {
+    line-height: 1;
+    margin-top: 13px;
+}
+.form-modal{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.modal-window__email{
+    text-align: center;
+    width: 300px;
+    background-color: #ddd534;
+    height: 70px;
+}
+.modal-window__submit-img{
+    width: 80px;
+    height: 76px;
+}
+.modal-window__email::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+.modal-window__email::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
+.modal-window__email:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
+.modal-window__email:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+.modal-window__email:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+.modal-window__email:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+.modal-window__email:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+.modal-window__email:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+@media screen and (max-width: 812px) {
+    .modal-window__email {
+        width: 40%;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 812px) {
+    .modal-window__submit-img {
+        width: 100%;
+        height: 46px;
+    }
+}
+.modal-window__pers-text {
+    text-decoration: none;
+    border-bottom: 1px dashed #4c4c4d
+}
+
+/*
+BUTTON CLOSE X
+*/
+.window__close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+    font-size:  30px;
+    font-weight:  bold;
+}
+.no-active{
+    display: none;
+}
