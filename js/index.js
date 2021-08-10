@@ -16,7 +16,7 @@ function drawRouletteWheel() {
     let canvas = document.getElementById("wheelcanvas");
     if (canvas.getContext) {
         let outsideRadius = 240;
-        let textRadius = 150;
+        let textRadius = 140;
         let insideRadius = 0;
         ctx = canvas.getContext("2d");
         ctx.clearRect(0, 0, 700, 700);
@@ -53,6 +53,21 @@ function drawRouletteWheel() {
             //ctx.stroke();
             ctx.restore(); //Возвращает ранее сохраненное состояние и атрибуты
         }
+        //Arrow  на канвасе
+        ctx.strokeStyle = 'gray'; // Set line colour.
+        ctx.fillStyle = 'gray'; // Set fill colour.
+        ctx.lineWidth = 1;
+        ctx.beginPath(); // Begin path.
+        ctx.moveTo(250 - 6, 250 - (265 + 15));
+        ctx.lineTo(250 + 6, 250 - (265 + 15));
+        ctx.lineTo(250 + 6, 250 - (265 - 15));
+        ctx.lineTo(250 + 15, 250 - (265 - 15));
+        ctx.lineTo(250 + 0, 250 - (265 - 33));
+        ctx.lineTo(250 - 15, 250 - (265 - 15));
+        ctx.lineTo(250 - 6, 250 - (265 - 15));
+        ctx.lineTo(250 - 6, 250 - (265 + 15));
+        ctx.stroke();
+        ctx.fill();
     }
 }
 

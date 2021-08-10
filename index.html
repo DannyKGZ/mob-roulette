@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/modalwindow/modalwindow.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./modalwindow/modalwindow.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,18 +25,19 @@
               <input class="modal-window__email" type="text" placeholder="Ваша почта" required>
               <a href="#"><img class="modal-window__submit-img" src="/img/img.jpg" alt="arrow"></a>
             </form>
-            <p>Нажимая кнопку, я соглашаюсь с политикой обработки <a class="modal-window__pers-text" href="#">персональных данных</a></p>
+            <p class="modal__agree-txt">Нажимая кнопку, я соглашаюсь с политикой обработки <a class="modal-window__pers-text" href="#">персональных данных</a></p>
           </div>
         
         <span class="window__close">×</span>
-        <canvas id="wheelcanvas" width="600" height="600"></canvas>
-
+        <div class="canvas">
+          <canvas id="wheelcanvas" width="500" height="250"></canvas>
+        </div>
       </div>
     </div>
   </div>
 
-<script src="/index.js"></script>
-<script src="/modalwindow/modalwindow.js"></script>
+<script src="./js/index.js"></script>
+<script src="./modalwindow/modalwindow.js"></script>
 </body>
 
 </html>
