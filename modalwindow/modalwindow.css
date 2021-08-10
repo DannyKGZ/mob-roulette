@@ -19,11 +19,14 @@
     position: absolute;
     bottom: 0;
     background-color: #fef200;
+    border-radius: 20px 20px 0 0;
     
     overflow:hidden;
     width: 100%;
-    height: 65%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     /*z-index: 99999;*/
 }
 /*
@@ -51,8 +54,10 @@
     text-align: center;
 }
 .modal-window__heading {
-    line-height: 1;
-    margin-top: 13px;
+    margin: 10px auto;
+}
+.modal-window__undertxt{
+    margin: 10px auto;
 }
 .form-modal{
     display: flex;
@@ -69,6 +74,29 @@
     width: 80px;
     height: 76px;
 }
+.modal__agree-txt{
+    margin: 5px 5px 40px 5px;
+}
+.modal-window__pers-text {
+    text-decoration: none;
+    border-bottom: 1px dashed #4c4c4d;
+    color: #000;
+}
+/*
+BUTTON CLOSE X
+*/
+.window__close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+    font-size:  30px;
+    font-weight:  bold;
+}
+.no-active{
+    display: none;
+}
+
 .modal-window__email::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
 .modal-window__email::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
 .modal-window__email:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
@@ -90,22 +118,31 @@
         height: 46px;
     }
 }
-.modal-window__pers-text {
-    text-decoration: none;
-    border-bottom: 1px dashed #4c4c4d
+/*@media screen and (min-width: 320px) and (max-width: 480px){
+    canvas {
+        position: absolute;
+        left: -28%;
+        top: 200px; 
+    }
 }
-
-/*
-BUTTON CLOSE X
-*/
-.window__close {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    cursor: pointer;
-    font-size:  30px;
-    font-weight:  bold;
+@media screen and (min-width: 480px) and (max-width: 600px){
+    canvas {
+        position: absolute;
+        left: -2%;
+        top: 323px; 
+    }
 }
-.no-active{
-    display: none;
+@media screen and (min-width: 600px) and (max-width: 768px){
+    canvas {
+        position: absolute;
+        left: 9%;
+        top: 323px; 
+    }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    canvas {
+        position: absolute;
+        left: 18%;
+        top: 323px; 
+    }
+}*/
