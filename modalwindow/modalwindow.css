@@ -118,31 +118,3 @@ BUTTON CLOSE X
         height: 46px;
     }
 }
-/*@media screen and (min-width: 320px) and (max-width: 480px){
-    canvas {
-        position: absolute;
-        left: -28%;
-        top: 200px; 
-    }
-}
-@media screen and (min-width: 480px) and (max-width: 600px){
-    canvas {
-        position: absolute;
-        left: -2%;
-        top: 323px; 
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 768px){
-    canvas {
-        position: absolute;
-        left: 9%;
-        top: 323px; 
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    canvas {
-        position: absolute;
-        left: 18%;
-        top: 323px; 
-    }
-}*/
